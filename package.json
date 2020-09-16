@@ -1,0 +1,22 @@
+{
+  "name": "yyagoub-github-io",
+  "version": "1.0.0",
+  "description": "personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yyagoub/yyagoub.github.io.git"
+  },
+  "author": "yyagoub",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yyagoub/yyagoub.github.io/issues"
+  },
+  "homepage": "https://github.com/yyagoub/yyagoub.github.io#readme",
+  "dependencies": {
+    "material-design-lite": "^1.3.0"
+  }
+}
