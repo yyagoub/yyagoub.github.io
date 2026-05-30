@@ -9,7 +9,7 @@ export default function TopNav() {
   return (
     <header className="topnav">
       <div className="topnav-inner">
-        <a href="/" className="topnav-brand" aria-label={t('sidebar.name')}>
+        <a href="/#/" className="topnav-brand" aria-label={t('sidebar.name')}>
           <span className="nav-monogram" aria-hidden="true">
             YY
           </span>
@@ -22,9 +22,9 @@ export default function TopNav() {
               <NavLink
                 key={route.path}
                 to={route.path}
-                className="nav-link"
-                activeClassName="is-active"
-                exact
+                className={({ isActive }) =>
+                  `nav-link ${isActive ? 'is-active' : ''}`
+                }
               >
                 {t(route.labelKey)}
               </NavLink>
