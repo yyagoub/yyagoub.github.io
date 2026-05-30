@@ -9,12 +9,12 @@ export default function TopNav() {
   return (
     <header className="topnav">
       <div className="topnav-inner">
-        <NavLink to="/about" className="topnav-brand" aria-label={t('sidebar.name')}>
+        <a href="/" className="topnav-brand" aria-label={t('sidebar.name')}>
           <span className="nav-monogram" aria-hidden="true">
             YY
           </span>
           <span className="topnav-name">{t('sidebar.name')}</span>
-        </NavLink>
+        </a>
         <nav className="topnav-links" aria-label={t('sidebar.role')}>
           {routes
             .filter((route) => route.showInSidebar)

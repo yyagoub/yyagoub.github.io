@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import './App.css';
 import './style.css';
