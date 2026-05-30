@@ -25,7 +25,7 @@ export const contactChannels = [
   },
   {
     key: 'linkedin',
-    url: 'https://www.linkedin.com/in/yousef-yagoub-1a9189100/',
+    url: 'https://www.linkedin.com/in/yyagoub/',
     icon: 'linkedin',
   },
   {
