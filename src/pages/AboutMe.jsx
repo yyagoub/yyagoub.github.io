@@ -1,6 +1,5 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import Hero from '../components/Hero.jsx';
 import Section from '../components/Section.jsx';
 import SectionHeading from '../components/SectionHeading.jsx';
 import MetricCard from '../components/MetricCard.jsx';
@@ -8,17 +7,20 @@ import ValueCard from '../components/ValueCard.jsx';
 import ReadMore from '../components/ReadMore.jsx';
 import { metrics, values, growth } from '../data/site.jsx';
 
-export default function About() {
+/**
+ * About Me Page - Comprehensive biography and professional profile
+ *
+ * Displays:
+ * - Your story and approach
+ * - Core values and philosophy
+ * - Impact metrics and achievements
+ * - Professional growth and development
+ */
+export default function AboutMe() {
   const { t } = useTranslation();
 
   return (
-    <div className="page page-home">
-      <section className="section zone-paper" aria-labelledby="hero-title">
-        <div className="section-inner">
-          <Hero />
-        </div>
-      </section>
-
+    <div className="page page-about-me">
       <Section zone="sand" labelledBy="story-title">
         <SectionHeading
           id="story-title"

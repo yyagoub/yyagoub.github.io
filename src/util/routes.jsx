@@ -1,8 +1,9 @@
 import React from 'react';
 import { Routes as RouterRoutes, Route, Navigate } from 'react-router-dom';
 
-import About from '../pages/About.jsx';
-import Projects from '../pages/Projects.jsx';
+import Home from '../pages/Home.jsx';
+import AboutMe from '../pages/AboutMe.jsx';
+import Portfolio from '../pages/Portfolio.jsx';
 import Contact from '../pages/Contact.jsx';
 
 export const routes = [
@@ -10,14 +11,20 @@ export const routes = [
     path: '/',
     labelKey: 'nav.home',
     showInSidebar: true,
-    component: About,
+    component: Home,
     defaultRoute: true,
   },
   {
-    path: '/platforms',
-    labelKey: 'nav.platforms',
+    path: '/about-me',
+    labelKey: 'nav.aboutMe',
     showInSidebar: true,
-    component: Projects,
+    component: AboutMe,
+  },
+  {
+    path: '/portfolio',
+    labelKey: 'nav.portfolio',
+    showInSidebar: true,
+    component: Portfolio,
   },
   {
     path: '/contact',

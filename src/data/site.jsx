@@ -1,7 +1,7 @@
 // Non-translatable structural data. All human-readable copy lives in i18n locales,
 // referenced here by translation key so EN/AR stay in sync.
 
-export const metrics = ['platforms', 'scale', 'team', 'facing'];
+export const metrics = ['nafathRevenue', 'nafathClients', 'hajjPilgrims', 'platforms'];
 
 export const values = ['build', 'analyze', 'translate'];
 
@@ -13,7 +13,7 @@ export const platforms = [
   'dakhli',
 ];
 
-export const experience = ['lead', 'engineer'];
+export const experience = ['lead', 'hajj', 'engineer'];
 
 export const growth = ['emba', 'speaking', 'learning'];
 

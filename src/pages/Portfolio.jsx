@@ -8,11 +8,19 @@ import { platforms, experience } from '../data/site.jsx';
 
 const VISUAL_ZONES = ['sand', 'sage', 'clay'];
 
-export default function Projects() {
+/**
+ * Portfolio Page - Showcase of projects, platforms, and professional work
+ *
+ * Displays:
+ * - Platforms and projects you've led or built
+ * - Professional experience timeline
+ * - Roles, responsibilities, and achievements
+ */
+export default function Portfolio() {
   const { t } = useTranslation();
 
   return (
-    <div className="page page-platforms">
+    <div className="page page-portfolio">
       <Section zone="paper" labelledBy="platforms-title">
         <SectionHeading
           id="platforms-title"

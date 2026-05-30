@@ -5,7 +5,8 @@
   },
   "nav": {
     "home": "Home",
-    "platforms": "Platforms",
+    "aboutMe": "About Me",
+    "portfolio": "Portfolio",
     "contact": "Contact",
     "skipToContent": "Skip to main content"
   },
@@ -37,6 +38,8 @@
     "lead": "I'm most alive resolving real pain, finding the hidden gap, and shaping messy operations into clean, repeatable systems. I bridge business and technology, and I make complex things simple.",
     "quote": "Leave every person and every system you touch a little simpler, a little stronger, and a little more capable than you found it.",
     "more": [
+      "For the last several years I've led the engineering and product team behind a core set of Saudi Arabia's national identity and verification platforms — Nafath, Absher biometric verification, mobile verification, fingerprint, and Dakhli. The work I'm proudest of is Nafath: by cutting onboarding time, sharpening our documentation, and treating client satisfaction as the real product, my team helped grow its annual revenue more than 40× — and its client base from 8 integrated clients to 600.",
+      "That instinct was set earlier, as database lead on the national External Hajj platform — a system serving around 1.7 million pilgrims a year. I learned to start from the data model, validate it against real operational load, and treat reporting as a first-class citizen, not an afterthought.",
       "I lead with humans, not just facts — harsh truths without empathy lose the room. I build the infrastructure first: solid ground before features, in systems and in teams alike.",
       "And I measure success by the people around me — I want them to leave more capable, more confident, and more themselves than when we met."
     ]
@@ -44,10 +47,10 @@
   "metrics": {
     "heading": "Impact at a glance",
     "items": {
-      "platforms": { "value": "5", "label": "National identity platforms owned" },
-      "scale": { "value": "National", "label": "Scale of the systems delivered" },
-      "team": { "value": "Cross-functional", "label": "Delivery team led end to end" },
-      "facing": { "value": "Regulator-facing", "label": "Technical voice with partners & regulators" }
+      "nafathRevenue": { "value": "40×", "label": "Growth in Nafath's annual revenue, led by my team" },
+      "nafathClients": { "value": "8 → 600", "label": "Integrated clients on Nafath" },
+      "hajjPilgrims": { "value": "1.7M", "label": "Pilgrims a year served by the Hajj platform I built the data layer for" },
+      "platforms": { "value": "5+", "label": "National identity & verification platforms I own" }
     }
   },
   "values": {
@@ -77,8 +80,8 @@
       "nafath": {
         "name": "Nafath",
         "short": "Nafath",
-        "desc": "National digital identity and single sign-on used to authenticate citizens and residents across public and private services — App and Web.",
-        "role": "Technical delivery, architecture, and stakeholder leadership across the product surface."
+        "desc": "National digital identity and single sign-on used to authenticate citizens and residents across public and private services — App and Web. The work I'm proudest of.",
+        "role": "Technical delivery, architecture, and stakeholder leadership across the product surface. My team grew its annual revenue more than 40× and its integrated client base from 8 to 600."
       },
       "absherBio": {
         "name": "Absher Bio Verification",
@@ -115,8 +118,15 @@
         "period": "Now",
         "title": "Product & Technology Lead — Identity Platforms",
         "org": "Elm",
-        "body": "Own technical delivery for a portfolio of national identity platforms. Lead a cross-functional team across delivery, production support, client onboarding, and software development. Run sprints, set architecture and priorities, make hiring calls, and represent the products to clients, partners, and regulators.",
+        "body": "Own technical delivery for a portfolio of national identity platforms. Lead a cross-functional team across delivery, production support, client onboarding, and software development. Run sprints, set architecture and priorities, make hiring calls, and represent the products to clients, partners, and regulators. On Nafath, my team grew annual revenue more than 40× and the integrated client base from 8 to 600.",
         "tags": ["Architecture", "Delivery (SCRUM)", "Systems analysis", "Stakeholder leadership", "Hiring"]
+      },
+      "hajj": {
+        "period": "Earlier",
+        "title": "Database Lead — External Hajj Platform",
+        "org": "National-scale system",
+        "body": "Designed the data layer for a system serving roughly 1.7 million pilgrims a year and billions of riyals in regulated transactions. Set the operating habit I still keep: start from the data model, validate it against real operational load, and treat reporting as a first-class citizen.",
+        "tags": ["Data modeling", "Scale", "Reporting", "Operational load"]
       },
       "engineer": {
         "period": "Foundation",
