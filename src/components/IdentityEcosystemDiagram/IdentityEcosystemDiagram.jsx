@@ -1,20 +1,34 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { platforms } from '../data/site.jsx';
+import { platforms } from '../../data/site.jsx';
 
-// Hub-and-spoke "ecosystem" diagram: a central identity hub connected to the
-// platforms. Decorative SVG (aria-hidden) + a visually-hidden text equivalent.
+/**
+ * Identity Ecosystem Diagram
+ *
+ * A hub-and-spoke visualization showing a central "Identity" node connected to
+ * surrounding platform/project nodes. The diagram uses SVG for rendering with
+ * proper accessibility labels.
+ *
+ * Customization:
+ * - Modify HUB position to move the center node
+ * - Modify NODES array to change platform node positions
+ * - Update styling in src/style.css (.diagram, .edge, .node, .hub-label, etc.)
+ * - Change translations in i18n locale files (hero.ecosystemCenter, hero.ecosystemAria, etc.)
+ */
+
 const HUB = { x: 240, y: 195 };
 const NODES = [
-  { x: 240, y: 55 },
-  { x: 408, y: 150 },
-  { x: 330, y: 330 },
-  { x: 150, y: 330 },
-  { x: 72, y: 150 },
+  { x: 240, y: 55 },   // top
+  { x: 408, y: 150 },  // top-right
+  { x: 330, y: 330 },  // bottom-right
+  { x: 150, y: 330 },  // bottom-left
+  { x: 72, y: 150 },   // top-left
 ];
 
-export default function DiagramHero() {
+export default function IdentityEcosystemDiagram() {
   const { t } = useTranslation();
+
+  // Map platform keys to node positions
   const nodes = platforms.slice(0, NODES.length).map((key, i) => ({
     pos: NODES[i],
     label: t('platforms.items.' + key + '.short'),
@@ -28,7 +42,7 @@ export default function DiagramHero() {
         role="img"
         aria-label={t('hero.ecosystemAria')}
       >
-        {/* edges first (behind nodes) */}
+        {/* Connecting edges (drawn first to appear behind nodes) */}
         {nodes.map((n, i) => (
           <line
             key={'e' + i}
@@ -40,7 +54,7 @@ export default function DiagramHero() {
           />
         ))}
 
-        {/* hub */}
+        {/* Central hub node */}
         <rect
           className="node-hub"
           x={HUB.x - 78}
@@ -59,7 +73,7 @@ export default function DiagramHero() {
           {t('hero.ecosystemCenter')}
         </text>
 
-        {/* platform nodes */}
+        {/* Platform nodes surrounding the hub */}
         {nodes.map((n, i) => (
           <g key={'n' + i}>
             <circle className="node" cx={n.pos.x} cy={n.pos.y} r="8" />

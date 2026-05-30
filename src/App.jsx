@@ -46,7 +46,7 @@ function App() {
   }, [t]);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <a className="skip-link" href="#main">
         {t('nav.skipToContent')}
       </a>
@@ -55,7 +55,7 @@ function App() {
         <Routes />
       </main>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
