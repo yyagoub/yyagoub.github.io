@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import Icon from './Icon';
+import Icon from './Icon.jsx';
 
 // Split layout: a visual panel on one side, content on the other.
 // Alternates sides down the page via the `reverse` prop. The visual is a

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { platforms } from '../data/site';
+import { platforms } from '../data/site.jsx';
 
 // Hub-and-spoke "ecosystem" diagram: a central identity hub connected to the
 // platforms. Decorative SVG (aria-hidden) + a visually-hidden text equivalent.

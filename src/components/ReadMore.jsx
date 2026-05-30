@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import Icon from './Icon';
+import Icon from './Icon.jsx';
 
 let _uid = 0;
 

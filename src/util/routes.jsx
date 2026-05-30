@@ -1,9 +1,9 @@
 import React from 'react';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import { Routes as RouterRoutes, Route, Navigate } from 'react-router-dom';
 
-import About from '../pages/About';
-import Projects from '../pages/Projects';
-import Contact from '../pages/Contact';
+import About from '../pages/About.jsx';
+import Projects from '../pages/Projects.jsx';
+import Contact from '../pages/Contact.jsx';
 
 export const routes = [
   {
@@ -29,15 +29,15 @@ export const routes = [
 
 function getRoutes() {
   return routes.map((route) => (
-    <Route path={route.path} component={route.component} exact key={route.path} />
+    <Route path={route.path} element={<route.component />} key={route.path} />
   ));
 }
 
 export default function Routes() {
   return (
-    <Switch>
+    <RouterRoutes>
       {getRoutes()}
-      <Redirect from="*" to="/about" />
-    </Switch>
+      <Route path="*" element={<Navigate to="/about" replace />} />
+    </RouterRoutes>
   );
 }

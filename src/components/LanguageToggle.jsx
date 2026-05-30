@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { LANGS } from '../i18n';
-import Icon from './Icon';
+import Icon from './Icon.jsx';
 
 export default function LanguageToggle() {
   const { i18n, t } = useTranslation();

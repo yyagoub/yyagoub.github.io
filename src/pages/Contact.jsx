@@ -1,9 +1,9 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import Section from '../components/Section';
-import SectionHeading from '../components/SectionHeading';
-import Icon from '../components/Icon';
-import { contactChannels } from '../data/site';
+import Section from '../components/Section.jsx';
+import SectionHeading from '../components/SectionHeading.jsx';
+import Icon from '../components/Icon.jsx';
+import { contactChannels } from '../data/site.jsx';
 
 export default function Contact() {
   const { t } = useTranslation();

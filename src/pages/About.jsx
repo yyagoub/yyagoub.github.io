@@ -1,12 +1,12 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import Hero from '../components/Hero';
-import Section from '../components/Section';
-import SectionHeading from '../components/SectionHeading';
-import MetricCard from '../components/MetricCard';
-import ValueCard from '../components/ValueCard';
-import ReadMore from '../components/ReadMore';
-import { metrics, values, growth } from '../data/site';
+import Hero from '../components/Hero.jsx';
+import Section from '../components/Section.jsx';
+import SectionHeading from '../components/SectionHeading.jsx';
+import MetricCard from '../components/MetricCard.jsx';
+import ValueCard from '../components/ValueCard.jsx';
+import ReadMore from '../components/ReadMore.jsx';
+import { metrics, values, growth } from '../data/site.jsx';
 
 export default function About() {
   const { t } = useTranslation();

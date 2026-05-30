@@ -1,10 +1,10 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import Section from '../components/Section';
-import SectionHeading from '../components/SectionHeading';
-import SplitCard from '../components/SplitCard';
-import Timeline from '../components/Timeline';
-import { platforms, experience } from '../data/site';
+import Section from '../components/Section.jsx';
+import SectionHeading from '../components/SectionHeading.jsx';
+import SplitCard from '../components/SplitCard.jsx';
+import Timeline from '../components/Timeline.jsx';
+import { platforms, experience } from '../data/site.jsx';
 
 const VISUAL_ZONES = ['sand', 'sage', 'clay'];
 

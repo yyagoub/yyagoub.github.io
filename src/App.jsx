@@ -3,10 +3,10 @@ import { HashRouter as BrowserRouter } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import './App.css';
 import './style.css';
-import TopNav from './components/TopNav';
-import Routes from './util/routes';
-import Icon from './components/Icon';
-import { contactChannels } from './data/site';
+import TopNav from './components/TopNav.jsx';
+import Routes from './util/routes.jsx';
+import Icon from './components/Icon.jsx';
+import { contactChannels } from './data/site.jsx';
 
 function Footer() {
   const { t } = useTranslation();

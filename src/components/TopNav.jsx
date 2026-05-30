@@ -1,8 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { routes } from '../util/routes';
-import LanguageToggle from './LanguageToggle';
+import { routes } from '../util/routes.jsx';
+import LanguageToggle from './LanguageToggle.jsx';
 
 export default function TopNav() {
   const { t } = useTranslation();
