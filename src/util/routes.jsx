@@ -7,7 +7,7 @@ import Contact from '../pages/Contact.jsx';
 
 export const routes = [
   {
-    path: '/about',
+    path: '/',
     labelKey: 'nav.home',
     showInSidebar: true,
     component: About,
@@ -37,7 +37,7 @@ export default function Routes() {
   return (
     <RouterRoutes>
       {getRoutes()}
-      <Route path="*" element={<Navigate to="/about" replace />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
     </RouterRoutes>
   );
 }
