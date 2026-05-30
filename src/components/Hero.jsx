@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Icon from './Icon.jsx';
-import IdentityEcosystemDiagram from './IdentityEcosystemDiagram/IdentityEcosystemDiagram.jsx';
+import ThisIsWhatIDo from './ThisIsWhatIDo/ThisIsWhatIDo.jsx';
 
 export default function Hero() {
   const { t } = useTranslation();
@@ -24,7 +24,7 @@ export default function Hero() {
           </NavLink>
         </div>
       </div>
-      <IdentityEcosystemDiagram />
+      <ThisIsWhatIDo />
     </div>
   );
 }

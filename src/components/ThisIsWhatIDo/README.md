@@ -1,19 +1,20 @@
-# Identity Ecosystem Diagram Component
+# This Is What I Do - Professional Ecosystem Diagram
 
 ## Overview
 
-A hub-and-spoke visualization component that displays a central "Identity" node connected to surrounding platform/project nodes. This diagram illustrates how various platforms (Nafath, Absher Bio, Dakhli, Fingerprint, Mobile Verification) are connected to a central identity hub.
+A hub-and-spoke visualization component that displays your professional identity/role at the center, connected to the surrounding projects and platforms you work with. This diagram illustrates your professional ecosystem across various identity and verification platforms (Nafath, Absher Bio, Dakhli, Fingerprint, Mobile Verification).
 
 ## Purpose
 
-- Visually communicate the relationship between the central identity system and multiple platforms
-- Show how different services/platforms connect to a core identity infrastructure
-- Provide an engaging visual representation on the homepage hero section
+- Visually communicate your professional role and the ecosystem of work surrounding it
+- Show how different platforms and projects connect to your core identity/expertise
+- Provide an engaging, memorable visual representation on the homepage hero section
+- Tell the story of what you do across multiple identity and verification initiatives
 
 ## Component Structure
 
 ### Files
-- `IdentityEcosystemDiagram.jsx` - Main component file
+- `ThisIsWhatIDo.jsx` - Main component file
 - `README.md` - This documentation file
 
 ### Key Concepts
@@ -47,7 +48,7 @@ A hub-and-spoke visualization component that displays a central "Identity" node 
 
 ### 1. Change Node Positions
 
-Edit the `NODES` array in `IdentityEcosystemDiagram.jsx`:
+Edit the `NODES` array in `ThisIsWhatIDo.jsx`:
 
 ```javascript
 const NODES = [
@@ -141,10 +142,10 @@ Edit `src/i18n/locales/en.json` and `src/i18n/locales/ar.json`:
 ## Usage
 
 ```jsx
-import IdentityEcosystemDiagram from './IdentityEcosystemDiagram/IdentityEcosystemDiagram.jsx';
+import ThisIsWhatIDo from './ThisIsWhatIDo/ThisIsWhatIDo.jsx';
 
 // In your component:
-<IdentityEcosystemDiagram />
+<ThisIsWhatIDo />
 ```
 
 ## Accessibility

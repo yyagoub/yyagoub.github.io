@@ -3,11 +3,11 @@ import { useTranslation } from 'react-i18next';
 import { platforms } from '../../data/site.jsx';
 
 /**
- * Identity Ecosystem Diagram
+ * This Is What I Do - Professional Ecosystem Visualization
  *
- * A hub-and-spoke visualization showing a central "Identity" node connected to
- * surrounding platform/project nodes. The diagram uses SVG for rendering with
- * proper accessibility labels.
+ * A hub-and-spoke diagram showing the central role/identity connected to
+ * the surrounding projects and platforms. Visualizes the professional ecosystem
+ * and what Yousef does across different identity and verification platforms.
  *
  * Customization:
  * - Modify HUB position to move the center node
@@ -25,7 +25,7 @@ const NODES = [
   { x: 72, y: 150 },   // top-left
 ];
 
-export default function IdentityEcosystemDiagram() {
+export default function ThisIsWhatIDo() {
   const { t } = useTranslation();
 
   // Map platform keys to node positions
