@@ -19,7 +19,7 @@ export default function Hero() {
             {t('hero.ctaPrimary')}
             <Icon name="arrow" size={18} className="icon-inline-end" />
           </NavLink>
-          <NavLink to="/platforms" className="btn btn-ghost">
+          <NavLink to="/portfolio" className="btn btn-ghost">
             {t('hero.ctaSecondary')}
           </NavLink>
         </div>
